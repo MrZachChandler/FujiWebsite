@@ -59,7 +59,7 @@ body, html {
 
   /*  bhoechie tab */
   .bhoechie-tab-container{
-    height: 600px;
+    height: 100vh;
     width: 100%;
     z-index: 10;
     background-color: #ffffff;
@@ -82,9 +82,10 @@ body, html {
 
       .list-group{
         margin-bottom: 0;
+        height: 1270px;
 
         .list-group-item {
-          margin-bottom: 0;
+          height: 100px;
 
           .fa {
             color: #5A55A3;
