@@ -12,36 +12,14 @@
     <!--build:css css/main.min.css-->
     <link rel="stylesheet" href="../../bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/nav.css" type="text/css">
     <link rel="stylesheet" href="../css/homepage.css" type="text/css">
     <!--endbuild-->
 
   </head>
   <body>
 
-
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="../img/FujiLogoTransparentBG.png" alt="Dispute Bills">
-          </a>
-        </div>
-        <div id="navbar3" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="menu.php">Menu</a></li>
-            <li><a href="location.php">Location</a></li>
-            <li><a href="#">Employment</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
-      </div>
-      <!--/.container-fluid -->
-    </nav>
+    <?php include '../includes/nav.php'?>
 
     <section class="jumbo">
 
@@ -49,7 +27,7 @@
 
     <section class="specials-etc">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row gutter-10">
           <div class="col-md-12">
             <div class="whats-new">
               <h1>What's New</h1>
@@ -60,15 +38,15 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row gutter-10">
           <div class="col-md-4">
-            <div class="call-to-action" id="dine-in">
+            <div class="call-to-action" id="dine-in">              
               <h1 class="text-center">Dine In</h1>
               <hr />
               <p>
                 No reservations needed for groups under 10.
               </p>
-              <a href="" class="btn btn-primary">Location</a>
+              <a href="" class="btn btn-default">Location</a>
             </div>
           </div>
           <div class="col-md-4">
@@ -78,7 +56,7 @@
               <p>
                 Give us a call and we'll have it ready in 15 minutes.
               </p>
-              <a href="" class="btn btn-primary">Call now</a>
+              <a href="" class="btn btn-default">Call now</a>
             </div>
           </div>
           <div class="col-md-4">
@@ -88,7 +66,7 @@
               <p>
                 We've partnered with Tiger Town to Go. (Delivery Prices may vary)
               </p>
-              <a href="" class="btn btn-primary">Order Now</a>
+              <a href="" class="btn btn-default">Order Now</a>
             </div>
           </div>
         </div>
@@ -97,8 +75,8 @@
 
     <section class="contact">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-6">
+        <div class="row contact-row">
+          <div class="col-md-6 col-md-offset-6 contact-col">
             <div class="contact-container">
               <h1>Quick Info</h1>
               <hr />
@@ -114,9 +92,25 @@
               </p>
               <hr />
               <h5>Address</h5>
-              <p></p>
+              <div class="row">
+                <div class="col-lg-9">
+                  <p>1499 S College St, Auburn, AL 36832</p>
+                </div>
+                <div class="col-lg-3">
+                  <a href="https://www.google.com/maps/dir//32.5793295,-85.4958647/@32.57933,-85.495865,16z?hl=en-US" class="btn btn-primary">Map It!</a>
+                </div>
+              </div>
               <hr />
               <h5>Phone</h5>
+              <div class="row">
+                <div class="col-lg-9">
+                  <p>(334) 887 - 7766</p>
+                </div>
+                <div class="col-lg-3">
+                  <a href="tel:334-887-7766" class="btn btn-primary">Call</a>
+                </div>
+              </div>
+
               <p></p>
             </div>
           </div>

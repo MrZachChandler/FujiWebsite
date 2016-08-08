@@ -6,21 +6,31 @@
   padding-right: 5px;
   padding-left: 5px; }
 
-.navbar {
-  margin-bottom: 0; }
-  .navbar .navbar-toggle {
-    padding: 10px;
-    margin: 25px 15px 25px 0; }
-  .navbar .navbar-brand {
-    height: 80px;
-    padding: 0px; }
-    .navbar .navbar-brand img {
-      height: 100%;
-      padding: 15px;
-      width: auto; }
-  .navbar .nav li a {
-    padding-top: 30px;
-    padding-bottom: 30px; }
+.btn-primary {
+  background: none;
+  padding: 12px 22px;
+  border: 2px solid white;
+  border-radius: 0;
+  color: white; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: gray;
+    border-color: gray;
+    background: none; }
+
+.btn-default {
+  background: none;
+  padding: 12px 22px;
+  border: 2px solid black;
+  border-radius: 0;
+  color: black; }
+  .btn-default:hover, .btn-default:focus, .btn-default:active {
+    color: gray;
+    border-color: gray;
+    background: none; }
+
+.container-fluid {
+  padding: 0;
+  height: 100%; }
 
 .jumbo {
   width: 100%;
@@ -31,43 +41,56 @@
   background: url("../img/sushi-bar.JPG") no-repeat center center fixed;
   background-size: cover; }
 
-.specials-etc [class^="col-"] {
-  padding: 0; }
-
-.specials-etc .whats-new {
-  height: 200px;
-  padding: 0;
-  padding-right: 1em;
-  padding-left: 1em;
-  border: 2px solid black;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  margin-right: 1em; }
-
-.specials-etc #dine-in {
-  margin-left: 1em; }
-
-.specials-etc #delivery {
-  margin-right: 1em; }
-
-.specials-etc .call-to-action {
-  height: 220px;
-  border: 2px solid black;
-  margin-bottom: 1em;
-  margin-right: 1em;
-  padding-right: 1em;
-  padding-left: 1em; }
-  .specials-etc .call-to-action .btn {
+.specials-etc {
+  padding: 1em; }
+  .specials-etc .whats-new {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 200px;
+    padding: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
     margin-top: 1em;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%); }
+    margin-bottom: 2.5em; }
+  .specials-etc .call-to-action {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 270px;
+    margin-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em; }
+    .specials-etc .call-to-action:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+    .specials-etc .call-to-action p {
+      font-size: 1.4em; }
+    .specials-etc .call-to-action .btn {
+      margin-top: 1em;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%); }
 
 .contact {
   background: url("../img/sushi-bar.JPG") no-repeat center center fixed;
   background-size: cover;
-  color: white; }
+  color: white;
+  padding: 0;
+  height: 650px; }
+  .contact .contact-row {
+    height: 100%;
+    margin: 0; }
+    .contact .contact-row .contact-col {
+      height: 100%; }
+  .contact .contact-container {
+    background: rgba(128, 128, 128, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75%;
+    width: 95%;
+    padding: 1.5em; }
   .contact h5 {
     font-size: 1.5em; }
   .contact p span {
