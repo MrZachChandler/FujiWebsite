@@ -1,0 +1,153 @@
+body, html {
+  margin: 0;
+  overflow: hidden;
+  height:100%;
+}
+
+// 10px gutter
+.gutter-10.row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+
+
+.navbar {
+  margin-bottom: 0;
+
+  .navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+  }
+
+  .navbar-brand {
+    height: 80px;
+    padding: 0px;
+
+    img {
+      height: 100%;
+      padding: 15px;
+      width: auto;
+    }
+  }
+
+  .nav {
+
+    li {
+
+      a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+
+
+.menu {
+  padding: 0;
+
+  .row {
+    margin: 0;
+  }
+
+  /*  bhoechie tab */
+  .bhoechie-tab-container{
+    height: 600px;
+    width: 100%;
+    z-index: 10;
+    background-color: #ffffff;
+    padding: 0 !important;
+    background-clip: padding-box;
+    opacity: 0.97;
+    filter: alpha(opacity=97);
+
+    .bhoechie-tab-menu {
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+      height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .list-group{
+        margin-bottom: 0;
+
+        .list-group-item {
+          margin-bottom: 0;
+
+          .fa {
+            color: #5A55A3;
+
+            &:active {
+              color: #ffffff;
+            }
+          }
+
+          .glyphicon {
+            color: #5A55A3;
+
+
+          }
+
+
+          &.active {
+            background-color: black !important;
+            background-image: #5A55A3 !important;
+            color: #ffffff !important;
+            border-color: black;
+          }
+
+          &.active:after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            margin-top: -13px;
+          }
+
+          &.active.glyphicon {
+            color: #ffffff;
+          }
+
+          &:first-child{
+            border-top-right-radius: 0 !important;
+            -moz-border-top-right-radius: 0 !important;
+            border-top-left-radius: 0 !important;
+            -moz-border-top-left-radius: 0 !important;
+          }
+
+          &:last-child {
+            border-bottom-right-radius: 0 !important;
+            -moz-border-bottom-right-radius: 0 !important;
+            border-top-left-radius: 0 !important;
+            -moz-border-top-left-radius: 0 !important;
+          }
+        }
+      }
+    } // end tabs
+
+    .bhoechie-tab-content{
+      background-color: #ffffff;
+      /* border: 1px solid #eeeeee; */
+      padding-left: 20px;
+      padding-top: 10px;
+      overflow-y: scroll;
+
+      &:not(.active) {
+        display: none;
+      }
+    }
+  }
+
+}

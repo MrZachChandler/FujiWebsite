@@ -33,8 +33,8 @@
         </div>
         <div id="navbar3" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Location</a></li>
+            <li><a href="menu.php">Menu</a></li>
+            <li><a href="location.php">Location</a></li>
             <li><a href="#">Employment</a></li>
           </ul>
         </div>
@@ -44,7 +44,84 @@
     </nav>
 
     <section class="jumbo">
-      
+
+    </section>
+
+    <section class="specials-etc">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="whats-new">
+              <h1>What's New</h1>
+              <hr />
+              <p>
+                Sushami Rolls with a hint of sashami.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="call-to-action" id="dine-in">
+              <h1 class="text-center">Dine In</h1>
+              <hr />
+              <p>
+                No reservations needed for groups under 10.
+              </p>
+              <a href="" class="btn btn-primary">Location</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="call-to-action">
+              <h1 class="text-center">Pick Up</h1>
+              <hr />
+              <p>
+                Give us a call and we'll have it ready in 15 minutes.
+              </p>
+              <a href="" class="btn btn-primary">Call now</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="call-to-action" id="delivery">
+              <h1 class="text-center">Delivery</h1>
+              <hr />
+              <p>
+                We've partnered with Tiger Town to Go. (Delivery Prices may vary)
+              </p>
+              <a href="" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6">
+            <div class="contact-container">
+              <h1>Quick Info</h1>
+              <hr />
+              <h5>Hours</h5>
+              <p>
+                <span>Monday-Thursday</span> 11:00am to 2:30pm and 4:30pm to 10:00pm
+              </p>
+              <p>
+                <span>Friday</span> 11:00am to 2:30pm and 4:30pm to 11:00pm
+              </p>
+              <p>
+                <span>Saturday-Sunday</span> 12:00pm to 10:00pm
+              </p>
+              <hr />
+              <h5>Address</h5>
+              <p></p>
+              <hr />
+              <h5>Phone</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--build:js /js/main.min.js -->
