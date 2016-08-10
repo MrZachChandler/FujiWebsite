@@ -1,3 +1,7 @@
+@font-face {
+  font-family: shanghai;
+  src: url(../fonts/shanghai.ttf); }
+
 .gutter-10.row {
   margin-right: -5px;
   margin-left: -5px; }
@@ -53,6 +57,8 @@
     padding-top: 1em;
     margin-top: 1em;
     margin-bottom: 2.5em; }
+    .specials-etc .whats-new h1 {
+      font-family: shanghai; }
   .specials-etc .call-to-action {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -63,6 +69,8 @@
     padding-top: 1em; }
     .specials-etc .call-to-action:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+    .specials-etc .call-to-action h1 {
+      font-family: shanghai; }
     .specials-etc .call-to-action p {
       font-size: 1.4em; }
     .specials-etc .call-to-action .btn {
@@ -77,6 +85,63 @@
   color: white;
   padding: 0;
   height: 650px; }
+  .contact .map-col {
+    height: 100%; }
+  .contact #fuji-panel {
+    color: black;
+    position: absolute;
+    width: 45%;
+    top: 0px;
+    /*left: 5%;*/
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px; }
+    .contact #fuji-panel h1 {
+      font-size: 2.5em; }
+    .contact #fuji-panel #address {
+      font-weight: normal;
+      font-size: 1.2em; }
+    .contact #fuji-panel .rating-row {
+      margin: 0; }
+      .contact #fuji-panel .rating-row [class^="col-"] {
+        padding: 0; }
+        .contact #fuji-panel .rating-row [class^="col-"] p {
+          font-size: 1.5em; }
+          .contact #fuji-panel .rating-row [class^="col-"] p span {
+            font-weight: normal; }
+        .contact #fuji-panel .rating-row [class^="col-"] .star-ratings-css {
+          unicode-bidi: bidi-override;
+          color: #c5c5c5;
+          font-size: 25px;
+          height: 25px;
+          width: 130px;
+          position: relative;
+          padding: 0;
+          text-shadow: 0px 1px 0 #a2a2a2; }
+          .contact #fuji-panel .rating-row [class^="col-"] .star-ratings-css-top {
+            color: #e7711b;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            display: block;
+            top: 0;
+            left: 0;
+            overflow: hidden; }
+          .contact #fuji-panel .rating-row [class^="col-"] .star-ratings-css-bottom {
+            padding: 0;
+            display: block;
+            z-index: 0; }
+  .contact #map {
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .contact .contact-row {
     height: 100%;
     margin: 0; }

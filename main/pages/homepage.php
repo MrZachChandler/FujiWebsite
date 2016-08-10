@@ -12,40 +12,37 @@
     <!--build:css css/main.min.css-->
     <link rel="stylesheet" href="../../bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/nav.css" type="text/css">
     <link rel="stylesheet" href="../css/homepage.css" type="text/css">
     <!--endbuild-->
 
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+
   </head>
   <body>
 
-    <?php include '../includes/nav.php'?>
+    <?php include '../includes/nav.php' ?>
 
-    <section class="jumbo">
-
-    </section>
+    <section class="jumbo"></section>
 
     <section class="specials-etc">
       <div class="container-fluid">
         <div class="row gutter-10">
           <div class="col-md-12">
             <div class="whats-new">
-              <h1>What's New</h1>
+              <h1>What&apos;s New</h1>
               <hr />
-              <p>
-                Sushami Rolls with a hint of sashami.
-              </p>
+              <p>Sushami Rolls with a hint of sashami.</p>
             </div>
           </div>
         </div>
         <div class="row gutter-10">
           <div class="col-md-4">
-            <div class="call-to-action" id="dine-in">              
+            <div class="call-to-action" id="dine-in">
               <h1 class="text-center">Dine In</h1>
               <hr />
-              <p>
-                No reservations needed for groups under 10.
-              </p>
+              <p>No reservations needed for groups under 10.</p>
               <a href="" class="btn btn-default">Location</a>
             </div>
           </div>
@@ -54,19 +51,17 @@
               <h1 class="text-center">Pick Up</h1>
               <hr />
               <p>
-                Give us a call and we'll have it ready in 15 minutes.
+                Give us a call and we&apos;ll have it ready in 15 minutes.
               </p>
-              <a href="" class="btn btn-default">Call now</a>
+              <a href="tel:334-887-7766" class="btn btn-default">Call now</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="call-to-action" id="delivery">
               <h1 class="text-center">Delivery</h1>
               <hr />
-              <p>
-                We've partnered with Tiger Town to Go. (Delivery Prices may vary)
-              </p>
-              <a href="" class="btn btn-default">Order Now</a>
+              <p>We&apos;ve partnered with Tiger Town to Go. (Delivery Prices may vary)</p>
+              <a href="https://www.tigertowntogo.com/r/656/restaurants/delivery/Japanese/Fuji-Sushi-Auburn" class="btn btn-default">Order Now</a>
             </div>
           </div>
         </div>
@@ -76,7 +71,29 @@
     <section class="contact">
       <div class="container-fluid">
         <div class="row contact-row">
-          <div class="col-md-6 col-md-offset-6 contact-col">
+          <div class="col-md-6 map-col">
+            <div id="fuji-panel">
+              <h1>Fuji Sushi Bar</h1>
+              <h5 id="address"></h5>
+              <div class="row rating-row">
+                <div class="col-lg-2">
+                  <p id="google-rating"></p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="star-ratings-css">
+                    <div class="star-ratings-css-top">
+                      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p><span id="number-reviews"></span> reviews</p>
+                </div>
+              </div>
+            </div>
+            <div id="map"></div>
+          </div>
+          <div class="col-md-6 contact-col">
             <div class="contact-container">
               <h1>Quick Info</h1>
               <hr />
@@ -104,25 +121,24 @@
               <h5>Phone</h5>
               <div class="row">
                 <div class="col-lg-9">
-                  <p>(334) 887 - 7766</p>
+                  <p>(334) 887 7766</p>
                 </div>
                 <div class="col-lg-3">
                   <a href="tel:334-887-7766" class="btn btn-primary">Call</a>
                 </div>
               </div>
-
-              <p></p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!--build:js /js/main.min.js -->
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../js/homepage.js"></script>
-    <!-- endbuild -->
-  </body>
 
-</HTML>
+        </section>
+
+        <!--build:js /js/main.min.js -->
+
+        <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../js/homepage.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfn2aFd3KwmE6NQ13H7lcuCv0JMRDqoIU&libraries=places&callback=initMap"></script>
+        <!-- endbuild -->
+      </body>
+
+    </HTML>

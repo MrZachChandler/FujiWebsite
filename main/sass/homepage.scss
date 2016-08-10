@@ -1,3 +1,8 @@
+@font-face {
+  font-family: shanghai;
+  src: url(../fonts/shanghai.ttf);
+}
+
 // 10px gutter
 .gutter-10.row {
   margin-right: -5px;
@@ -48,7 +53,7 @@
   height: 500px;
   margin-bottom: 0;
   padding: 0;
-   overflow:auto;
+  overflow:auto;
   background: url('../img/sushi-bar.JPG') no-repeat center center fixed;
   background-size:cover;
 }
@@ -66,6 +71,10 @@
     padding-top: 1em;
     margin-top: 1em;
     margin-bottom: 2.5em;
+
+    h1 {
+      font-family: shanghai;
+    }
   }
 
   .call-to-action {
@@ -77,9 +86,12 @@
     padding-left: 1em;
     padding-top: 1em;
 
-
     &:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-family: shanghai;
     }
 
     p {
@@ -102,6 +114,88 @@
   padding: 0;
   height: 650px;
 
+  .map-col {
+    height: 100%;
+  }
+
+  #fuji-panel {
+    color: black;
+    position: absolute;
+    width: 45%;
+    top: 0px;
+    /*left: 5%;*/
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    #address {
+      font-weight: normal;
+      font-size: 1.2em;
+    }
+
+    .rating-row {
+      margin: 0;
+
+      [class^="col-"] {
+        padding: 0;
+
+        p {
+          font-size: 1.5em;
+
+          span {
+            font-weight: normal;
+          }
+        }
+
+        .star-ratings-css {
+          unicode-bidi: bidi-override;
+          color: #c5c5c5;
+          font-size: 25px;
+          height: 25px;
+          width: 130px;
+          position: relative;
+          padding: 0;
+          text-shadow: 0px 1px 0 #a2a2a2;
+
+          &-top {
+            color: #e7711b;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            display: block;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+          }
+          &-bottom {
+            padding: 0;
+            display: block;
+            z-index: 0;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  #map {
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
   .contact-row {
     height: 100%;
     margin: 0;
@@ -122,18 +216,18 @@
     padding: 1.5em;
   }
 
-    h1 {
+  h1 {
 
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  p {
+
+    span {
+      font-weight: bold;
     }
-
-    h5 {
-      font-size: 1.5em;
-    }
-
-    p {
-
-      span {
-        font-weight: bold;
-      }
-    }
+  }
 }

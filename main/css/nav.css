@@ -1,15 +1,30 @@
+@font-face {
+  font-family: shanghai;
+  src: url(../fonts/shanghai.ttf); }
+
 .navbar {
   margin-bottom: 0; }
   .navbar .navbar-toggle {
     padding: 10px;
     margin: 25px 15px 25px 0; }
   .navbar .navbar-brand {
-    height: 80px;
+    height: 105px;
     padding: 0px; }
     .navbar .navbar-brand img {
       height: 100%;
-      padding: 15px;
+      padding: 25px;
       width: auto; }
   .navbar .nav li a {
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    color: white;
+    font-size: 2em;
+    font-family: shanghai;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .navbar .nav .open p {
+    color: green; }
+  .navbar .nav .closed i {
+    color: red;
+    margin-right: 1em; }
+  .navbar .nav .closed p {
+    color: white;
+    font-size: 2em; }

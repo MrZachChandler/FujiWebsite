@@ -1,7 +1,11 @@
+@font-face {
+  font-family: shanghai;
+  src: url(../fonts/shanghai.ttf); }
+
 body, html {
   margin: 0;
-  overflow: hidden;
-  height: 100%; }
+  padding: 0;
+  overflow-x: hidden; }
 
 .gutter-10.row {
   margin-right: -5px;
@@ -13,25 +17,36 @@ body, html {
 
 .menu {
   padding: 0;
+  overflow: hidden;
+  height: calc(100vh - 81px);
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
   /*  bhoechie tab */ }
-  .menu .row {
-    margin: 0; }
-  .menu .bhoechie-tab-container {
-    height: 100vh;
+  .menu .menu-row {
+    margin: 0;
+    height: calc(100vh - 81px);
     width: 100%;
-    z-index: 10;
-    background-color: #ffffff;
-    padding: 0 !important;
-    background-clip: padding-box;
-    opacity: 0.97;
-    filter: alpha(opacity=97); }
+    backface-visibility: hidden;
+    will-change: overflow; }
+  .menu .bhoechie-tab-container {
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+    height: calc(100vh - 81px);
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow; }
     .menu .bhoechie-tab-container .bhoechie-tab-menu {
       padding-right: 0;
       padding-left: 0;
       padding-bottom: 0;
-      height: 100%;
-      overflow-y: scroll;
-      overflow-x: hidden; }
+      overflow: auto;
+      height: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none; }
       .menu .bhoechie-tab-container .bhoechie-tab-menu::-webkit-scrollbar {
         display: none; }
       .menu .bhoechie-tab-container .bhoechie-tab-menu .list-group {
@@ -68,11 +83,86 @@ body, html {
             -moz-border-bottom-right-radius: 0 !important;
             border-top-left-radius: 0 !important;
             -moz-border-top-left-radius: 0 !important; }
-    .menu .bhoechie-tab-container .bhoechie-tab-content {
-      background-color: #ffffff;
-      /* border: 1px solid #eeeeee; */
-      padding-left: 20px;
-      padding-top: 10px;
-      overflow-y: scroll; }
-      .menu .bhoechie-tab-container .bhoechie-tab-content:not(.active) {
-        display: none; }
+    .menu .bhoechie-tab-container .bhoechie-tab {
+      overflow: auto;
+      height: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;
+      padding: 0; }
+      .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content {
+        background-color: #ffffff;
+        /* border: 1px solid #eeeeee; */ }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content.active {
+          overflow: auto;
+          height: auto;
+          -webkit-overflow-scrolling: touch;
+          -ms-overflow-style: none; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content:not(.active) {
+          display: none; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content h3 {
+          margin-top: .5em;
+          margin-bottom: .7em;
+          text-align: center;
+          font-family: shanghai;
+          color: #55518a;
+          font-size: 3em; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content .menu-items {
+          margin-left: 2em;
+          margin-right: 2em; }
+          .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content .menu-items .title-col {
+            padding: 0;
+            padding-left: 1em; }
+          .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content .menu-items .price-col .price {
+            text-align: right; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content .menu-pic {
+          width: 100%;
+          height: 200px;
+          margin-bottom: 2em; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #lunch-specials-pic {
+          background: url("../img/sushi-2.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #appetizers-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #soups-salads-pic {
+          background: url("../img/soup.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #dinner-entrees-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #signature-dishes-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #rice-dishes-pic {
+          background: url("../img/rice.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #nigiri-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #sashimi-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #sushi-combos-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #small-rolls-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #chef-special-rolls-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #side-dishes-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #sushi-rolls-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #sweet-treats-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #teriyaki-combos-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
+        .menu .bhoechie-tab-container .bhoechie-tab .bhoechie-tab-content #katsu-pic {
+          background: url("../img/sushi.jpg") no-repeat center center fixed;
+          background-size: cover; }
